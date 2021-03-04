@@ -1,9 +1,11 @@
+import Layout from "../components/layout"
 import React from "react"
-
+import SEO from "../components/seo"
 
 export default function contact() {
   return <div>
-
+    <Layout>
+    <SEO title="Home" />
     <form
     name="contact v2"
     method="post"
@@ -33,5 +35,6 @@ export default function contact() {
       </div>
      <button type="submit">Submit</button>
     </form>
+    </Layout>
   </div>
 }

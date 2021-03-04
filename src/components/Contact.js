@@ -10,7 +10,7 @@ export default function Contact (){
     data-netlify-honeypot="bot-field"
     onSubmit="submit"
     >
-      <input type="hidden" name="form-name" value="contact v1"/>
+      <input type="hidden" name="form-name" value="contact v2"/>
       <div hidden>
         <input name="bot-field"/>
       </div>

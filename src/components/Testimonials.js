@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
-import {CheckTestimonialIcon} from "../components/core/icons"
+
 import { graphql, useStaticQuery } from 'gatsby'
 
 
@@ -35,13 +35,7 @@ const Testimonials = () => {
                <ContentWrapper>
                    <ColumnOne>
                      <Testimonial>
-                         <CheckTestimonialIcon css={
-                             
-                             `font-size:2rem;
-                             color:#3fffa8;
-                             margin-bottom:1rem;
-                             `
-                         } />
+                         
                          <h3>Sean Michales</h3>
                          <p>“We have worked with Kayak on two key Gabriele events
 where Suki headlined and presented the best of Wellbeing

@@ -1,27 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
-import {EarthStatsIcon, AirStatsIcon, MoneyStatsIcon} from "../components/core/icons"
+
 
 const StatsData = [
     {
-        icon: <EarthStatsIcon css={
-                             
-            `
-            color:#0475d4;
-            
-            `
-        } />,
+        
         title: "Over 200 Destination",
         desc:"travel all around the world",
     },
     {
-        icon: <AirStatsIcon css={
-                             
-            `
-            color:#FF5733;
-            
-            `
-        }/>,
+      
         title: "Over 200 Destination",
         desc:"travel all around the world",
     },
@@ -31,13 +19,7 @@ const StatsData = [
         desc:"travel all around the world",
     },
     {
-        icon: <MoneyStatsIcon css={
-                             
-            `
-            color:#FF0099  ;
-            
-            `
-        }/>,
+        
         title: "Over 200 Destination",
         desc:"travel all around the world",
     },
@@ -52,7 +34,7 @@ const Stats = () => {
               {StatsData.map((item,index) => {
                   return (
                       <StatsBox key={index} >
-                          <Icon>{item.icon}</Icon>
+                          
                           <Title>{item.title}</Title>
                           <Description>{item.desc}</Description >
                       </StatsBox>
@@ -101,10 +83,6 @@ padding:2rem;
 
 `
 
-const Icon = styled.div`
-font-size:3rem;
-margin-bottom: 1rem;
-`
 
 const Title = styled.div`
 font-size: clamp(1rem, 2.5vw, 1.5rem);

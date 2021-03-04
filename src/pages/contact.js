@@ -25,7 +25,13 @@ const contact = () => {
 }
 
 export default contact
-const ContactMainContainer =styled.div``
+const ContactMainContainer =styled.div`
+width:100%;
+background:#fcfcfc;
+color:#000;
+padding:5rem calc((100vw - 1300px) / 2);
+height:100%;
+`
 
 const ContactImage = styled.div`
 img {

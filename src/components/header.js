@@ -28,7 +28,7 @@ const Header = () => {
              <Link to="/about" >About</Link>
              <Link to="/trips" >Trips</Link>
              <Link to="/careers">Careers</Link>
-             <Link to="/Contact">Contact</Link>
+             <Link to="/contact">Contact</Link>
            </NavItems>
 
 

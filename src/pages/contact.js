@@ -12,7 +12,9 @@ const contact = () => {
        <ContactImage>
          <img src={Img} alt=""/>
        </ContactImage>
+       <ContactContainer>
        <Contact/>
+       </ContactContainer>
 
     </ContactMainContainer>
 
@@ -25,7 +27,11 @@ const contact = () => {
 }
 
 export default contact
+
 const ContactMainContainer =styled.div`
+
+`
+const ContactContainer =styled.div`
 width:100%;
 background:#fcfcfc;
 color:#000;

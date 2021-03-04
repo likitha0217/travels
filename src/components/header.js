@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import React, { useState } from 'react';
 import styled from 'styled-components'
-import Img from "../assets/images/logo.jpg"
+
 
 import { slide as Menu } from 'react-burger-menu'
 import { Button } from "./Button"

@@ -1,12 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
-import {GiEarthAmerica} from 'react-icons/gi'
-import {MdAirplanemodeActive, MdTimer} from 'react-icons/Md'
-import {FaMoneyCheck} from 'react-icons/fa'
+import {EarthStatsIcon, AirStatsIcon, MoneyStatsIcon} from "../components/core/icons"
 
 const StatsData = [
     {
-        icon: <GiEarthAmerica css={
+        icon: <EarthStatsIcon css={
                              
             `
             color:#0475d4;
@@ -17,7 +15,7 @@ const StatsData = [
         desc:"travel all around the world",
     },
     {
-        icon: <MdAirplanemodeActive css={
+        icon: <AirStatsIcon css={
                              
             `
             color:#FF5733;
@@ -28,18 +26,12 @@ const StatsData = [
         desc:"travel all around the world",
     },
     {
-        icon: <MdTimer css={
-                             
-            `
-            color:#66FF66;
-            
-            `
-        }/>,
+        
         title: "Over 200 Destination",
         desc:"travel all around the world",
     },
     {
-        icon: <FaMoneyCheck css={
+        icon: <MoneyStatsIcon css={
                              
             `
             color:#FF0099  ;

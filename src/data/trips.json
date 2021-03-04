@@ -1,0 +1,31 @@
+[
+    {
+       "img": "../assets/images/travel1.jpg",
+       "alt": "tita titan Buddha",
+       "name": "Tian Tan Budha",
+       "button": "View Destination"
+
+    },
+    {
+        "img": "../assets/images/travel2.jpg",
+        "alt": "Our creators",
+        "name": "Our creators",
+        "button": "View Destination"
+ 
+     },
+     {
+        "img": "../assets/images/travel3.jpg",
+        "alt": "Show your appreciation",
+        "name": "Show your appreciation",
+        "button": "View Destination"
+ 
+     },
+     {
+        "img": "../assets/images/travel4.jpg",
+        "alt": "Create a calendar",
+        "name": "Create a calendar",
+        "button": "View Destination"
+ 
+     }
+
+]

@@ -1,47 +1,49 @@
-import { graphql, useStaticQuery } from 'gatsby'
 import React from 'react'
-import styled from 'styled-components'
 import Img from 'gatsby-image'
 
+import styled from'styled-components'
+import { graphql, useStaticQuery } from 'gatsby'
 const Logo = () => {
-    const data = useStaticQuery(graphql`
+  const data = useStaticQuery(graphql`
     query {
         placeholder: file(relativePath: { eq: "logo1.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 200, quality:100) {
+            fluid(maxWidth: 150, quality:100) {
               ...GatsbyImageSharpFluid
             }
           }
         }
-        
-  
-      }
+    }
     `)
-    return (
-        <div>
-           <Image fluid={data.placeholder.childImageSharp.fluid} />                                      
-                       
-        </div>
-    )
+  return (
+    <LogoConatiner>
+      <LogoImage>
+      <Image fluid={data.placeholder.childImageSharp.fluid} />  
+      </LogoImage>
+    </LogoConatiner>
+    
+  )
 }
 
 export default Logo
+const LogoConatiner =styled.div``
 
+const LogoImage = styled.div``
 const Image =styled(Img)`
-img {
-    position: inherit !important;
-    margin-top: -20px;
-  
-}
-div{
-    padding:0px !important;
-}
+display:flex;
+color: #fff;
+justify-content:center;
+align-items:center;
+height:10vh;
+width: 5vw;
+padding:0 1rem;
+position:relative;
+margin-top:10px;
 
-@media(max-width: 720px) {
-img {
-    margin-left: 45px;
-    width: 20vw !important;
-    margin-top: 27px !important;
-}
+@media screen and (max-width:768px){
+  width: 21vw !important;
+  
+  margin-left: 161px;
+
 }
 `

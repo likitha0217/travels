@@ -35,6 +35,13 @@ module.exports = {
         icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: "gatsby-plugin-mailchimp",
+      options: {
+        endpoint:
+          "https://kaidawei.us3.list-manage.com/subscribe/post?u=b96fce7934d3d67838002705e&amp;id=87c55442ce", // add your MailChimp list endpoint here; see instructions below
+      },
+    },
     `gatsby-plugin-gatsby-cloud`,
     `gatsby-transformer-json`,
     {

@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import EmailBg from '../assets/images/email1.jpg'
-import {Button} from './Button'
+
+import MailChimpComponent from './Mailchimp'
 
 const Email = () => {
     return (
@@ -12,24 +13,8 @@ const Email = () => {
                    your first trip </p>
                    <form action="#">
                        <FormWrap>
-                           <label htmlFor="email">
-                               <input type="email" placeholder="Enter your email" id="email" />
-                           </label>
-                           <Button as="button" type="submit" primary="true" round="true" css={
-                             `  height:48px;
-                             
-                               @media screen and (max-width:768px){
-                                   width:100%;
-                                   min-width:350px;
-                               }
-                               @media screen and (max-width:400x){
-                                width: 100%;
-                                min-width:250px;
-                            }
-                           `}>
-                               SignUp
-
-                           </Button>
+                           <MailChimpComponent />
+                          
                        </FormWrap>
                    </form>
            </EmailContent>

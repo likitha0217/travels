@@ -3,7 +3,7 @@ import React from "react"
 import Footer from "./Footer"
 import Header from "./header"
 import { GlobalStyle } from "./styles/GlobalStyles"
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Layout = ({ children }) => {
   

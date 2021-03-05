@@ -36,15 +36,15 @@ const Header = () => {
            <SideMenu>
              <Menu isOpen={ menuState.menuOpen }>
 
-               <Link className="menu-item" to="/" onClick={() => closeMenu() }>
-                 Home
+               <Link className="menu-item" to="/about" onClick={() => closeMenu() }>
+                 About
                </Link>
                
-               <Link className="menu-item" to="/services" onClick={() => closeMenu() }>
-               Our Services
+               <Link className="menu-item" to="/trips" onClick={() => closeMenu() }>
+               Trips
                </Link>
 
-               <Link className="menu-item" to="/client" onClick={() => closeMenu() }>
+               <Link className="menu-item" to="/careers" onClick={() => closeMenu() }>
                Client
                </Link>
 

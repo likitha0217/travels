@@ -43,4 +43,8 @@ align-items:center;
 height:100vh;
 padding:0 1rem;
 position:relative;
-margin-top:-80px;`
+margin-top:-80px;
+@media screen and (max-width:768px){
+  height:60vh ;
+
+}`
